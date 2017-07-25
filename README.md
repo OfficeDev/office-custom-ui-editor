@@ -1,5 +1,5 @@
 
-#Office Custom UI Editor
+Office Custom UI Editor
 ===============
 
 This GitHub repo contains the latest version of the the Office Custom UI Editor application and all its source code.

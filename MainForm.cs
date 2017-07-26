@@ -69,8 +69,16 @@ namespace CustomUIEditor
 		private ToolStripMenuItem o14ToolStripMenuItem;
 		private ToolStripMenuItem o12ToolStripMenuItem;
 		private System.ComponentModel.IContainer components;
-
-        private Commands _commands;
+		private ToolStripMenuItem helpToolStripMenuItem;
+		private ToolStripMenuItem customizeTheRibbonToolStripMenuItem;
+		private ToolStripMenuItem customizeTheOustpaceToolStripMenuItem;
+		private ToolStripMenuItem commandIdentifiersToolStripMenuItem;
+		private ToolStripMenuItem repurposingControlsToolStripMenuItem;
+		private ToolStripMenuItem officeDevCenterToolStripMenuItem;
+		private ToolStripMenuItem createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem;
+		private ToolStripMenuItem aboutToolStripMenuItem;
+		private ToolStripSeparator toolStripSeparator4;
+		private Commands _commands;
 
 		public MainForm()
 		{
@@ -135,6 +143,15 @@ namespace CustomUIEditor
 			this.insertImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.sampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.officeDevCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.customizeTheRibbonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.customizeTheOustpaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.commandIdentifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.repurposingControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripContainer2 = new System.Windows.Forms.ToolStripContainer();
 			this.commandBar = new System.Windows.Forms.ToolStrip();
 			this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -262,7 +279,8 @@ namespace CustomUIEditor
 			this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.insertToolStripMenuItem});
+            this.insertToolStripMenuItem,
+            this.helpToolStripMenuItem});
 			this.menuMain.Location = new System.Drawing.Point(0, 0);
 			this.menuMain.Name = "menuMain";
 			this.menuMain.Size = new System.Drawing.Size(792, 24);
@@ -389,6 +407,75 @@ namespace CustomUIEditor
 			this.sampleToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
 			this.sampleToolStripMenuItem.Text = "&Sample XML";
 			// 
+			// helpToolStripMenuItem
+			// 
+			this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizeTheRibbonToolStripMenuItem,
+            this.customizeTheOustpaceToolStripMenuItem,
+            this.repurposingControlsToolStripMenuItem,
+            this.commandIdentifiersToolStripMenuItem,
+            this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem,
+            this.officeDevCenterToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.aboutToolStripMenuItem});
+			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+			this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+			this.helpToolStripMenuItem.Text = "Help";
+			// 
+			// officeDevCenterToolStripMenuItem
+			// 
+			this.officeDevCenterToolStripMenuItem.Name = "officeDevCenterToolStripMenuItem";
+			this.officeDevCenterToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.officeDevCenterToolStripMenuItem.Text = "Office Dev Center";
+			this.officeDevCenterToolStripMenuItem.Click += new System.EventHandler(this.officeDevCenterToolStripMenuItem_Click);
+			// 
+			// customizeTheRibbonToolStripMenuItem
+			// 
+			this.customizeTheRibbonToolStripMenuItem.Name = "customizeTheRibbonToolStripMenuItem";
+			this.customizeTheRibbonToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.customizeTheRibbonToolStripMenuItem.Text = "Customizing the Ribbon";
+			this.customizeTheRibbonToolStripMenuItem.Click += new System.EventHandler(this.customizeTheRibbonToolStripMenuItem_Click);
+			// 
+			// customizeTheOustpaceToolStripMenuItem
+			// 
+			this.customizeTheOustpaceToolStripMenuItem.Name = "customizeTheOustpaceToolStripMenuItem";
+			this.customizeTheOustpaceToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.customizeTheOustpaceToolStripMenuItem.Text = "Customizing the Backstage";
+			this.customizeTheOustpaceToolStripMenuItem.Click += new System.EventHandler(this.customizeTheOustpaceToolStripMenuItem_Click);
+			// 
+			// commandIdentifiersToolStripMenuItem
+			// 
+			this.commandIdentifiersToolStripMenuItem.Name = "commandIdentifiersToolStripMenuItem";
+			this.commandIdentifiersToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.commandIdentifiersToolStripMenuItem.Text = "Office Fluent UI Command Identifiers";
+			this.commandIdentifiersToolStripMenuItem.Click += new System.EventHandler(this.commandIdentifiersToolStripMenuItem_Click);
+			// 
+			// repurposingControlsToolStripMenuItem
+			// 
+			this.repurposingControlsToolStripMenuItem.Name = "repurposingControlsToolStripMenuItem";
+			this.repurposingControlsToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.repurposingControlsToolStripMenuItem.Text = "Repurposing built-in commands";
+			this.repurposingControlsToolStripMenuItem.Click += new System.EventHandler(this.repurposingControlsToolStripMenuItem_Click);
+			// 
+			// createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem
+			// 
+			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Name = "createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem";
+			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Text = "Creating Office add-ins using Visual Studio (VSTO)";
+			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Click += new System.EventHandler(this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.Size = new System.Drawing.Size(336, 6);
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.aboutToolStripMenuItem.Text = "About";
+			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+			// 
 			// toolStripContainer2
 			// 
 			// 
@@ -414,25 +501,23 @@ namespace CustomUIEditor
             this.tsbGenerateCallbacks});
 			this.commandBar.Location = new System.Drawing.Point(3, 24);
 			this.commandBar.Name = "commandBar";
-			this.commandBar.Size = new System.Drawing.Size(133, 25);
+			this.commandBar.Size = new System.Drawing.Size(407, 25);
 			this.commandBar.TabIndex = 1;
 			this.commandBar.Text = "Command Bar";
 			// 
 			// openToolStripButton
 			// 
-			this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.openToolStripButton.Image = global::CustomUIEditor.ImagesResource.open;
 			this.openToolStripButton.Name = "openToolStripButton";
-			this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+			this.openToolStripButton.Size = new System.Drawing.Size(56, 22);
 			this.openToolStripButton.Text = "&Open";
 			this.openToolStripButton.Click += new System.EventHandler(this.open_Click);
 			// 
 			// saveToolStripButton
 			// 
-			this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.saveToolStripButton.Image = global::CustomUIEditor.ImagesResource.save;
 			this.saveToolStripButton.Name = "saveToolStripButton";
-			this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+			this.saveToolStripButton.Size = new System.Drawing.Size(51, 22);
 			this.saveToolStripButton.Text = "&Save";
 			this.saveToolStripButton.Click += new System.EventHandler(this.save_Click);
 			// 
@@ -443,29 +528,26 @@ namespace CustomUIEditor
 			// 
 			// insertIconsToolStripButton
 			// 
-			this.insertIconsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.insertIconsToolStripButton.Image = global::CustomUIEditor.ImagesResource.insertPicture;
 			this.insertIconsToolStripButton.Name = "insertIconsToolStripButton";
-			this.insertIconsToolStripButton.Size = new System.Drawing.Size(23, 22);
+			this.insertIconsToolStripButton.Size = new System.Drawing.Size(87, 22);
 			this.insertIconsToolStripButton.Text = "Insert Icons";
 			this.insertIconsToolStripButton.Click += new System.EventHandler(this.insertIcons_Click);
 			// 
 			// tsbValidateXml
 			// 
-			this.tsbValidateXml.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.tsbValidateXml.Image = global::CustomUIEditor.ImagesResource.check;
 			this.tsbValidateXml.Name = "tsbValidateXml";
-			this.tsbValidateXml.Size = new System.Drawing.Size(23, 22);
+			this.tsbValidateXml.Size = new System.Drawing.Size(68, 22);
 			this.tsbValidateXml.Text = "Validate";
 			this.tsbValidateXml.Click += new System.EventHandler(this.tsbValidateXml_Click);
 			// 
 			// tsbGenerateCallbacks
 			// 
-			this.tsbGenerateCallbacks.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.tsbGenerateCallbacks.Image = global::CustomUIEditor.ImagesResource.callbacks;
 			this.tsbGenerateCallbacks.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.tsbGenerateCallbacks.Name = "tsbGenerateCallbacks";
-			this.tsbGenerateCallbacks.Size = new System.Drawing.Size(23, 22);
+			this.tsbGenerateCallbacks.Size = new System.Drawing.Size(127, 22);
 			this.tsbGenerateCallbacks.Text = "Generate Callbacks";
 			this.tsbGenerateCallbacks.Click += new System.EventHandler(this.tsbGenerateCallbacks_Click);
 			// 
@@ -654,7 +736,8 @@ namespace CustomUIEditor
 			// 
 			// MainForm
 			// 
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.ClientSize = new System.Drawing.Size(792, 545);
 			this.Controls.Add(this.tsContainer);
 			this.Controls.Add(this.toolStripContainer2);
@@ -1100,6 +1183,42 @@ namespace CustomUIEditor
 					this.o12ToolStripMenuItem.Enabled = false;
 				}
 			}
+		}
+
+		private void customizeTheRibbonToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://msdn.microsoft.com/en-us/library/aa338202(v=office.14).aspx");
+		}
+
+		private void customizeTheOustpaceToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://msdn.microsoft.com/en-us/library/ee691833(office.14).aspx");
+		}
+
+		private void commandIdentifiersToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://github.com/OfficeDev/office-fluent-ui-command-identifiers");
+		}
+
+		private void createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://msdn.microsoft.com/en-us/library/jj620922.aspx");
+		}
+
+		private void officeDevCenterToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://dev.office.com/");
+		}
+
+		private void repurposingControlsToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Process.Start("https://blogs.technet.microsoft.com/the_microsoft_excel_support_team_blog/2012/06/18/how-to-repurpose-a-button-in-excel-2007-or-2010/");
+		}
+
+		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form about = new AboutBox();
+			about.Show();
 		}
 	}
 }

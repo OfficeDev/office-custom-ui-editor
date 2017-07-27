@@ -144,12 +144,12 @@ namespace CustomUIEditor
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.sampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.officeDevCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.customizeTheRibbonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.customizeTheOustpaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.commandIdentifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.repurposingControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.commandIdentifiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.officeDevCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripContainer2 = new System.Windows.Forms.ToolStripContainer();
@@ -422,13 +422,6 @@ namespace CustomUIEditor
 			this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.helpToolStripMenuItem.Text = "Help";
 			// 
-			// officeDevCenterToolStripMenuItem
-			// 
-			this.officeDevCenterToolStripMenuItem.Name = "officeDevCenterToolStripMenuItem";
-			this.officeDevCenterToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
-			this.officeDevCenterToolStripMenuItem.Text = "Office Dev Center";
-			this.officeDevCenterToolStripMenuItem.Click += new System.EventHandler(this.officeDevCenterToolStripMenuItem_Click);
-			// 
 			// customizeTheRibbonToolStripMenuItem
 			// 
 			this.customizeTheRibbonToolStripMenuItem.Name = "customizeTheRibbonToolStripMenuItem";
@@ -443,13 +436,6 @@ namespace CustomUIEditor
 			this.customizeTheOustpaceToolStripMenuItem.Text = "Customizing the Backstage";
 			this.customizeTheOustpaceToolStripMenuItem.Click += new System.EventHandler(this.customizeTheOustpaceToolStripMenuItem_Click);
 			// 
-			// commandIdentifiersToolStripMenuItem
-			// 
-			this.commandIdentifiersToolStripMenuItem.Name = "commandIdentifiersToolStripMenuItem";
-			this.commandIdentifiersToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
-			this.commandIdentifiersToolStripMenuItem.Text = "Office Fluent UI Command Identifiers";
-			this.commandIdentifiersToolStripMenuItem.Click += new System.EventHandler(this.commandIdentifiersToolStripMenuItem_Click);
-			// 
 			// repurposingControlsToolStripMenuItem
 			// 
 			this.repurposingControlsToolStripMenuItem.Name = "repurposingControlsToolStripMenuItem";
@@ -457,12 +443,26 @@ namespace CustomUIEditor
 			this.repurposingControlsToolStripMenuItem.Text = "Repurposing built-in commands";
 			this.repurposingControlsToolStripMenuItem.Click += new System.EventHandler(this.repurposingControlsToolStripMenuItem_Click);
 			// 
+			// commandIdentifiersToolStripMenuItem
+			// 
+			this.commandIdentifiersToolStripMenuItem.Name = "commandIdentifiersToolStripMenuItem";
+			this.commandIdentifiersToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.commandIdentifiersToolStripMenuItem.Text = "Office Fluent UI Command Identifiers";
+			this.commandIdentifiersToolStripMenuItem.Click += new System.EventHandler(this.commandIdentifiersToolStripMenuItem_Click);
+			// 
 			// createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem
 			// 
 			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Name = "createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem";
 			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
 			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Text = "Creating Office add-ins using Visual Studio (VSTO)";
 			this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem.Click += new System.EventHandler(this.createCOMVSTOAddinsForOfficeByUsingVisualStudioToolStripMenuItem_Click);
+			// 
+			// officeDevCenterToolStripMenuItem
+			// 
+			this.officeDevCenterToolStripMenuItem.Name = "officeDevCenterToolStripMenuItem";
+			this.officeDevCenterToolStripMenuItem.Size = new System.Drawing.Size(339, 22);
+			this.officeDevCenterToolStripMenuItem.Text = "Office Dev Center";
+			this.officeDevCenterToolStripMenuItem.Click += new System.EventHandler(this.officeDevCenterToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator4
 			// 
@@ -738,6 +738,7 @@ namespace CustomUIEditor
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+			this.AutoSize = true;
 			this.ClientSize = new System.Drawing.Size(792, 545);
 			this.Controls.Add(this.tsContainer);
 			this.Controls.Add(this.toolStripContainer2);
@@ -784,6 +785,8 @@ namespace CustomUIEditor
 		[STAThread]
 		static void Main()
 		{
+			Application.EnableVisualStyles();
+			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new MainForm());
 		}
 

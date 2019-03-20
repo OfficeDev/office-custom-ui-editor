@@ -1,3 +1,13 @@
+---
+topic: sample
+products:
+- Office 365
+languages:
+- C#
+extensions:
+  contentType: tools
+  createdDate: 7/24/2017 3:16:04 PM
+---
 
 Office Custom UI Editor
 ===============
